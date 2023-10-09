@@ -9,13 +9,13 @@ employee1.AddScore(9);
 employee2.AddScore(2);
 employee3.AddScore(2);
 
-employee1.AddScore(4);
-employee2.AddScore(5);
-employee3.AddScore(7);
+employee1.AddScore(6);
+employee2.AddScore(8);
+employee3.AddScore(9);
 
 employee1.AddScore(2);
 employee2.AddScore(4);
-employee3.AddScore(8);
+employee3.AddScore(3);
 
 employee1.AddScore(9);
 employee2.AddScore(8);
@@ -45,9 +45,10 @@ foreach(var employee in employees)
     if (employee.Result > maxResult)
     { 
         userWithMaxResult = employee; 
+        maxResult = employee.Result;
     }
 }
-Console.WriteLine(userWithMaxResult.imie + userWithMaxResult.nazwisko + userWithMaxResult.wiek + userWithMaxResult.Result);
+Console.WriteLine(userWithMaxResult.imie + " " + userWithMaxResult.nazwisko + " " + "w wieku" + " " + userWithMaxResult.wiek + " " + "lat" + " " + "zdobyła najwięcej" + " " + userWithMaxResult.Result + " " + "punktów.");
 
 
 
